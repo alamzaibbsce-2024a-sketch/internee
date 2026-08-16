@@ -1,3 +1,4 @@
 pandas
-scikit-surprise
+scikit-learn
+matplotlib
 jupyter

@@ -1,53 +1,48 @@
-# Learning Path Recommendation System
+# Sentiment Analysis of Internship Feedback
 
 ## Project Description
 
-This project recommends personalized learning paths for interns based on their previous learning patterns.
+This project analyzes internship feedback using Machine Learning.
 
-The system uses collaborative filtering with Matrix Factorization to predict which learning modules are most suitable for each intern.
+A Logistic Regression model is trained to classify intern feedback into two categories:
+
+- Positive
+- Negative
+
+The project helps identify areas where intern satisfaction can be improved.
 
 ## Objective
 
-The objective is to provide customized learning recommendations based on an intern's previous course interactions.
+The objective is to analyze intern feedback and identify positive and negative experiences during the internship.
 
 ## Technologies Used
 
 - Python
 - Pandas
+- Scikit-learn
+- TF-IDF Vectorization
+- Logistic Regression
+- Matplotlib
 - Jupyter Notebook
-- Scikit-Surprise
-- SVD Matrix Factorization
 
 ## How It Works
 
-1. Learning interaction data is created for different interns.
-2. The data is converted into an intern-course rating matrix.
-3. The SVD Matrix Factorization algorithm learns patterns from the data.
-4. The model predicts ratings for learning modules.
-5. The system recommends the top learning modules for each intern.
+1. Internship feedback data is collected.
+2. Feedback is divided into positive and negative categories.
+3. The data is divided into training and testing sets.
+4. TF-IDF converts text into numerical features.
+5. Logistic Regression learns from the training data.
+6. The model predicts sentiment for unseen feedback.
+7. Model accuracy and classification metrics are calculated.
+8. A chart displays the overall sentiment distribution.
 
-## Learning Modules
+## Model Performance
 
-- Python
-- Machine Learning
-- Deep Learning
-- SQL
-- Data Science
+The Logistic Regression model achieved approximately **75% accuracy** on the test dataset.
 
-## How to Run
+## Example
 
-1. Open `learning_path_recommendation.ipynb`.
-2. Install the required libraries.
-3. Run the notebook cells from top to bottom.
-4. View the personalized learning recommendations.
-
-## Project Structure
+Input:
 
 ```text
-Project-5-Learning-Path-Recommendation/
-│
-├── learning_path_recommendation.ipynb
-├── README.md
-├── requirements.txt
-├── .gitignore
-└── screenshot/
+The mentor was very helpful and I learned many new skills.
