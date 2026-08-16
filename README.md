@@ -1,79 +1,53 @@
-# Project 1: Intern Performance Prediction
+# Learning Path Recommendation System
 
-## 📌 Project Description
+## Project Description
 
-This project predicts an intern's performance score using a Machine Learning Regression model.
+This project recommends personalized learning paths for interns based on their previous learning patterns.
 
-The model uses the following features:
-- Task Completion Time
-- Feedback Rating
-- Attendance Percentage
+The system uses collaborative filtering with Matrix Factorization to predict which learning modules are most suitable for each intern.
 
-The target is the intern's performance score.
+## Objective
 
----
+The objective is to provide customized learning recommendations based on an intern's previous course interactions.
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - Python
-- Jupyter Notebook
 - Pandas
-- NumPy
-- Scikit-learn
+- Jupyter Notebook
+- Scikit-Surprise
+- SVD Matrix Factorization
 
----
+## How It Works
 
-## 📂 Dataset
+1. Learning interaction data is created for different interns.
+2. The data is converted into an intern-course rating matrix.
+3. The SVD Matrix Factorization algorithm learns patterns from the data.
+4. The model predicts ratings for learning modules.
+5. The system recommends the top learning modules for each intern.
 
-The dataset contains the following columns:
+## Learning Modules
 
-- Completion_Time
-- Feedback
-- Attendance
-- Performance
+- Python
+- Machine Learning
+- Deep Learning
+- SQL
+- Data Science
 
----
+## How to Run
 
-## 🤖 Machine Learning Model
+1. Open `learning_path_recommendation.ipynb`.
+2. Install the required libraries.
+3. Run the notebook cells from top to bottom.
+4. View the personalized learning recommendations.
 
-This project uses the **Random Forest Regressor** algorithm.
+## Project Structure
 
----
-
-## 📊 Workflow
-
-1. Import libraries
-2. Load the dataset
-3. Split data into training and testing sets
-4. Train the Random Forest Regression model
-5. Make predictions
-6. Evaluate the model using Mean Absolute Error (MAE)
-
----
-
-## ▶️ How to Run
-
-1. Open `intern_performance.ipynb`.
-2. Run all notebook cells in order.
-3. View the predicted performance scores and MAE.
-
----
-
-## 📁 Project Structure
-
-```
-Project-1-Intern-Performance-Prediction/
+```text
+Project-5-Learning-Path-Recommendation/
 │
-├── intern_performance.ipynb
-├── intern_performance.csv
+├── learning_path_recommendation.ipynb
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-└── screenshots/
-```
-
----
-
-## 👨‍💻 Author
-
-Created as part of the DecodeLabs Internship.
+└── screenshot/
