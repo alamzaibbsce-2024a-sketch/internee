@@ -1,48 +1,68 @@
-# Sentiment Analysis of Internship Feedback
+# AI-Powered Interview Question Generator
 
-## Project Description
+## Overview
 
-This project analyzes internship feedback using Machine Learning.
+This project is a basic AI-powered interview question generator created as part of my DecodeLabs internship.
 
-A Logistic Regression model is trained to classify intern feedback into two categories:
+The project uses a text-generation model to generate customized technical and behavioral interview questions based on:
 
-- Positive
-- Negative
-
-The project helps identify areas where intern satisfaction can be improved.
+* Intern profile
+* Job role
+* Job description
 
 ## Objective
 
-The objective is to analyze intern feedback and identify positive and negative experiences during the internship.
+The objective of this project is to generate role-specific interview questions for interns using a text-generation model.
 
 ## Technologies Used
 
-- Python
-- Pandas
-- Scikit-learn
-- TF-IDF Vectorization
-- Logistic Regression
-- Matplotlib
-- Jupyter Notebook
+* Python
+* Jupyter Notebook
+* Hugging Face Transformers
+* PyTorch
+* DistilGPT-2
+
+## Features
+
+* Generate technical interview questions
+* Generate behavioral interview questions
+* Customize questions using an intern profile
+* Customize questions based on a job role
+* Use a job description to make questions more relevant
+* Reusable Python function for generating questions
 
 ## How It Works
 
-1. Internship feedback data is collected.
-2. Feedback is divided into positive and negative categories.
-3. The data is divided into training and testing sets.
-4. TF-IDF converts text into numerical features.
-5. Logistic Regression learns from the training data.
-6. The model predicts sentiment for unseen feedback.
-7. Model accuracy and classification metrics are calculated.
-8. A chart displays the overall sentiment distribution.
+The user provides:
 
-## Model Performance
+1. Intern profile
+2. Job role
+3. Job description
 
-The Logistic Regression model achieved approximately **75% accuracy** on the test dataset.
+The information is added to prompts and passed to the DistilGPT-2 text-generation model.
 
-## Example
+The model then generates separate technical and behavioral interview questions.
 
-Input:
+## Project Structure
 
 ```text
-The mentor was very helpful and I learned many new skills.
+Project-5-AI-Interview-Question-Generator/
+│
+├── interview_question_generator.ipynb
+├── README.md
+├── requirements.txt
+└── screenshot.png
+```
+
+## How to Run
+
+1. Install Python.
+2. Install the required libraries.
+3. Open the Jupyter Notebook.
+4. Run the notebook cells from top to bottom.
+5. Enter or modify the intern profile, job role, and job description.
+6. Run the generator function to generate interview questions.
+
+## Note
+
+This is a basic educational project demonstrating text generation and prompt-based customization using a pre-trained language model.
